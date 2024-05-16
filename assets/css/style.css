@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    max-width: 500px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+input:not([type='submit']){
+    margin: 10px 0;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #777;
+    outline-color: orangered;
+}
+
+input[type='submit'] {
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type='submit']:hover {
+    background-color: #ff4500cc;
+}
+
+@media (max-width:576px){
+    section {
+        max-width: 300px;
+    }
+}
